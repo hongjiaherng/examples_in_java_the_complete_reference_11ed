@@ -85,7 +85,18 @@ class FJExperiment {
         beginT = System.nanoTime();
 
         // Start the main ForkJoinTask.
-        fjp.invoke(task);
+        // Method 1:
+
+//        fjp.invoke(task);
+
+        // Method 2:
+        // Asynchronously start the main ForkJoinTask.
+        fjp.execute(task);
+
+        // Display the state of the pool while waiting.
+        if (!task.isDone()) {
+            System.out.println(fjp); // print the toString() statement of the ForkJoinPool.
+        }
 
         // End timing.
         endT = System.nanoTime();
