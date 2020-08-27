@@ -93,6 +93,7 @@ class FJExperiment {
         System.out.println("Level of parallelism: " + pLevel);
         System.out.println("Sequential threshold: " + threshold);
         System.out.println("Elapsed time: " + (endT - beginT) + " ns");
+        System.out.println("Available processors: " + Runtime.getRuntime().availableProcessors());
         System.out.println();
 
     }
