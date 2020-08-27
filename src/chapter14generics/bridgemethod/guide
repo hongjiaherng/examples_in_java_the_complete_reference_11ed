@@ -1,0 +1,5 @@
+go to the BridgeDemo's class directory
+in this case: out\production\chapter14generics\bridgemethod
+
+type command line:
+javap Gen2
