@@ -2,9 +2,7 @@
 
 package chapter29streamapi;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
