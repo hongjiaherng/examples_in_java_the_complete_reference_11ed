@@ -1,0 +1,22 @@
+1. Add the directory in which the .class files located to the CLASSPATH environment variable
+
+2. Start the rmiregistry on the server machine
+    Command:
+        start rmiregistry
+
+3. Start the server
+    Command:
+        java AddServer
+
+4. Start the client
+    Option 1 (on remote machine):
+        1. Make sure AddClient.class and AddServerIntf.class are available at the client machine.
+        2. Invoke one of the following command:
+            Command:
+                java AddClient server1 8 9
+                java AddClient 11.12.13.14 8 9
+
+    Option 2 (on same machine):
+        1. Open another terminal and run this command
+            Command:
+                java AddClient 127.0.0.1 8 9
