@@ -1,4 +1,4 @@
-package chapter35introducingservlet;
+package chapter35introducingservlet; // This must not contain in the file
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
